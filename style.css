@@ -76,7 +76,8 @@ body{
     object-fit: cover;
 }
 .container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
@@ -245,4 +246,56 @@ body{
 .star {
     color: red;
     font-size: 15px;
+}
+.sale-new h1{
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 30px;
+    text-align: center;
+}
+.new-arrival {
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+.Links {
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: black;
+    padding: 10px;
+    min-width: 180px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.dropdown-menu a:hover {
+    background: #333;
+}
+.view-more{
+    text-align: right;
+    margin: 15px;
 }
