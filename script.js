@@ -3,7 +3,7 @@ let index = 0;
 const slides = document.querySelector('.slides');
 const totalSlides = document.querySelectorAll('.slide').length;
 
-setInterval(function() {
+setInterval(function () {
     index++;
 
     if (index >= totalSlides) {
