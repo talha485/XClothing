@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60d692df-5873-4f7d-bc3f-03f767ffdc7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/new-arrival.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/season-sale.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/aboutus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contactus.html" beforeDir="false" afterPath="$PROJECT_DIR$/contactus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new-arrival.html" beforeDir="false" afterPath="$PROJECT_DIR$/new-arrival.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/season-sale.html" beforeDir="false" afterPath="$PROJECT_DIR$/season-sale.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;fix-section-titles&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;header&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
@@ -92,7 +92,9 @@
       <workItem from="1776764464768" duration="15449000" />
       <workItem from="1776943030712" duration="9129000" />
       <workItem from="1777232988794" duration="1830000" />
-      <workItem from="1777377918820" duration="8172000" />
+      <workItem from="1777377918820" duration="10163000" />
+      <workItem from="1777535881214" duration="2118000" />
+      <workItem from="1777573488921" duration="2516000" />
     </task>
     <servers />
   </component>
