@@ -34,10 +34,19 @@ if (form) {
         form.reset();
     });
 }
+//Header
 document.addEventListener("DOMContentLoaded", function () {
     fetch("header.html")
         .then(res => res.text())
         .then(data => {
             document.getElementById("header").innerHTML = data;
+        });
+});
+//Footer
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
         });
 });
