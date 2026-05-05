@@ -39,7 +39,18 @@ body {
     color: white;
     font-size: 18px;
 }
+.drop-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.drop-link:hover {
+    transition: 0.5s;
+    transform: scale(1.0);
+    color: red;
+    cursor: pointer;
 
+}
 .Links a:hover {
     transition: 0.5s;
     transform: scale(1.0);
@@ -204,20 +215,17 @@ body {
 
 .about {
     padding: 50px;
-    background-color: darkgray;
 }
 
 .contactus {
     padding: 50px;
     text-align: center;
     line-height: 2.6;
-    background-color: darkgrey;
 
 }
 
 .form {
     padding: 50px;
-    background-color: darkgray;
 }
 
 .form input {
@@ -269,7 +277,6 @@ body {
 
 .text {
     text-align: center;
-    background-color: darkgray;
 }
 
 .star {
