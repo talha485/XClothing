@@ -1,52 +1,63 @@
-const slides = document.querySelector('.slides');
-if (slides) {
+function initSlider() {
 
-    let index = 0;
+    let slides = document.querySelector('.slides');
+    if (slides) {
+
+        let index = 0;
 
 
-    const slides = document.querySelector('.slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
+        let totalSlides = document.querySelectorAll('.slide').length;
 
-    setInterval(function () {
-        index++;
+        setInterval(function () {
+            index++;
 
-        if (index >= totalSlides) {
-            index = 0;
-        }
+            if (index >= totalSlides) {
+                index = 0;
+            }
 
-        slides.style.transform = "translateX(-" + index * 100 + "%)";
-    }, 2000);
+            slides.style.transform = "translateX(-" + index * 100 + "%)";
+        }, 2000);
+    }
 }
 
-let form = document.getElementById('contactForm');
-if (form) {
+function initContactForm() {
 
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
 
-        let name = document.getElementById('name').value;
-        let email = document.getElementById('email').value;
-        let phone = document.getElementById('phone').value;
-        let message = document.getElementById('message').value;
+    let form = document.getElementById('contactForm');
+    if (form) {
 
-        alert(`${name} with Phone number ${phone} & email ${email} has sent the following message: ${message}`);
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
 
-        form.reset();
-    });
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+            let message = document.getElementById('message').value;
+
+            alert(`${name} with Phone number ${phone} & email ${email} has sent the following message: ${message}`);
+
+            form.reset();
+        });
+    }
 }
-//Header
-document.addEventListener("DOMContentLoaded", function () {
+
+function loadHeaderFooter() {
+
     fetch("header.html")
         .then(res => res.text())
         .then(data => {
             document.getElementById("header").innerHTML = data;
         });
-});
-//Footer
-document.addEventListener("DOMContentLoaded", function () {
+
     fetch("footer.html")
         .then(res => res.text())
         .then(data => {
             document.getElementById("footer").innerHTML = data;
         });
-});
+
+}
+document.addEventListener("DOMContentLoaded", function() {
+    initSlider();
+    initContactForm();
+    loadHeaderFooter();
+})
