@@ -15,7 +15,7 @@ if (slides) {
         }
 
         slides.style.transform = "translateX(-" + index * 100 + "%)";
-    }, 2000);
+    }, 4000);
 }
 
 let form = document.getElementById('contactForm');
@@ -50,3 +50,52 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("footer").innerHTML = data;
         });
 });
+function openProduct(name, price1, price2, img) {
+
+    // single price (null or undefined)
+    if (!price2) {
+        window.location.href =
+            `product-description-page.html?name=${name}&price=${price1}&img=${img}`;
+    }
+
+    // sale product
+    else {
+        window.location.href =
+            `product-description-page.html?name=${name}&old=${price1}&new=${price2}&img=${img}`;
+    }
+}
+
+
+// ================= LOAD PRODUCT DATA =================
+const params = new URLSearchParams(window.location.search);
+
+if (document.getElementById("name")) {
+
+    let name = params.get("name");
+    let oldPrice = params.get("old");
+    let newPrice = params.get("new");
+    let price = params.get("price");
+    let img = params.get("img");
+
+    document.getElementById("name").innerText = name;
+    document.getElementById("img").src = img;
+
+    let oldEl = document.getElementById("oldPrice");
+    let newEl = document.getElementById("newPrice");
+
+    // ===== SALE PRODUCT =====
+    if (oldPrice && newPrice) {
+        oldEl.innerText = "Rs. " + oldPrice;
+        oldEl.style.display = "inline";
+
+        newEl.innerText = "Rs. " + newPrice;
+    }
+
+    // ===== SINGLE PRICE =====
+    else {
+        oldEl.innerText = "";          // remove Rs null
+        oldEl.style.display = "none";  // hide old price
+
+        newEl.innerText = "Rs. " + price;
+    }
+}
