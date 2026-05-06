@@ -6,6 +6,7 @@
 
 body {
     line-height: 1.6;
+    background-color: #bfb0b7;
 }
 
 .Navbar {
@@ -13,13 +14,14 @@ body {
     display: flex;
     align-items: center;
     padding: 5px 10px;
-    background: #252e3c;
+    background:  #0E1627;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .Navbar img {
+    margin-left: 70px;
     height: 80px;
     width: auto;
 }
@@ -153,7 +155,7 @@ body {
 
 .footer {
     display: flex;
-    background-color: #252e3c;
+    background-color: #0E1627;
     color: white;
     justify-content: space-around;
     align-items: flex-start;
@@ -285,7 +287,7 @@ body {
 }
 
 .sale-new h1 {
-    color: red;
+    color: black;
     font-weight: bold;
     font-size: 40px;
     margin-top: 30px;
@@ -293,7 +295,7 @@ body {
 }
 
 .new-arrival {
-    color: red;
+    color: black;
     font-weight: bold;
     font-size: 25px;
     width: 100%;
@@ -362,3 +364,19 @@ body {
     font-size: 15px;
     margin-left: 5px;
 }
+
+.price {
+    margin-top: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: red;
+    font-weight: bold;
+}
+
