@@ -60,18 +60,19 @@ let products = [
         category: "new"
     }
 ]
-// 1. Get the containers
+
 let seasonSaleContainer = document.getElementById('season');
 let newArrivalContainer = document.getElementById('new-arrival');
 
-// 2. Create a reusable function to generate the HTML
-// This handles the "undefined" price issue automatically
+
 let generateHTML = (product) => `
     <div class="product-card">
-        <div class="img-container">
-            <img src="${product.img}" alt="${product.name}">
-        </div>
-        <h3>${product.name}</h3>
+        <a href="product-detail-page.html?id=${product.id}" style="text-decoration: none; color: inherit;">
+            <div class="img-container">
+                <img src="${product.img}" alt="${product.name}">
+            </div>
+            <h3>${product.name}</h3>
+        </a>
         <p class="price-row">
             ${product.oldPrice ? `<span class="old-price">Rs. ${product.oldPrice}</span>` : ''}
             <span class="new-price">Rs. ${product.newPrice}</span>
