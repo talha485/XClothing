@@ -82,6 +82,9 @@ function loadHeaderFooter() {
         });
 
 }
+function goBack() {
+    window.history.back();
+}
 document.addEventListener("DOMContentLoaded", function() {
     loadHeaderFooter();
     initSlider();
