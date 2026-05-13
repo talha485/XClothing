@@ -71,7 +71,7 @@ let generateHTML = (product) => `
             <div class="img-container">
                 <img src="${product.img}" alt="${product.name}">
             </div>
-            <h3>${product.name}</h3>
+            <p class="product-name">${product.name}</p>
         </a>
         <p class="price-row">
             ${product.oldPrice ? `<span class="old-price">Rs. ${product.oldPrice}</span>` : ''}
