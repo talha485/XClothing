@@ -1,3 +1,16 @@
+let cart = [];
+
+function addToCart(product) {
+    cart.push(product);
+    console.log("Cart:", cart);
+    alert(product.name + " added to cart");
+}
+function goBack() {
+    window.history.back();
+}
+
+
+
 function initSlider() {
     const slidesWrapper = document.querySelector('.slides');
     const sliderContainer = document.querySelector('.hero');
@@ -82,12 +95,13 @@ function loadHeaderFooter() {
         });
 
 }
-function goBack() {
-    window.history.back();
-}
-document.addEventListener("DOMContentLoaded", function() {
+
+
+document.addEventListener("DOMContentLoaded", function () {
     loadHeaderFooter();
-    initSlider();
+    if (document.querySelector(".slides")) {
+        initSlider();
+    }
     initContactForm();
 
 })
