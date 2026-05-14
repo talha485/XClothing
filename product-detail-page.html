@@ -24,50 +24,9 @@
 <div id="footer"></div>
 
 <script src="products.js"></script>
-
-<script>
-    const params = new URLSearchParams(window.location.search);
-    const productId = params.get('id');
-
-    const product = products.find(p => p.id == productId);
-
-
-    const container = document.getElementById('detail-content');
-
-    if (product) {
-        container.innerHTML = `
-            <div class="detail-wrapper">
-                <div class="image-box">
-                    <img src="${product.img}" alt="${product.name}">
-                </div>
-               <div class="info-box">
-
-    <p class="detail-product-name">${product.name}</p>
-
-    <p class="category">
-        Category: ${product.category}
-    </p>
-
-    <div class="price">
-        ${product.oldPrice ? `<span class="old-price">Rs. ${product.oldPrice}</span>` : ''}
-        <span class="new-price">Rs. ${product.newPrice}</span>
-    </div>
-
-    <p class="detail-description">
-        High quality ${product.name} from X Clothing's latest collection.
-    </p>
-
-    <button class="btn-add-cart">
-        ADD TO CART
-    </button>
-
-</div>
-
-        `;
-    } else {
-        container.innerHTML = "<h2>Product Not Found</h2><a href='index.html'>Back to Home</a>";
-    }
-</script>
 <script src="script.js"></script>
+<script src="products-detail-page.js"></script>
+
+
 </body>
 </html>
