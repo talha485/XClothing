@@ -1,14 +1,26 @@
-let cart = [];
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+console.log("Page loaded cart:", cart);
 
 function addToCart(product) {
-    cart.push(product);
-    console.log("Cart:", cart);
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let existingProduct = cart.find(item => item.id === product.id);
+    if (existingProduct) {
+        existingProduct.quantity += 1;
+    } else {
+        let productWithQuantity = {
+            ...product,
+            quantity: 1
+        };
+        cart.push(productWithQuantity);
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    console.log("Updated Cart:", cart);
     alert(product.name + " added to cart");
 }
+
 function goBack() {
     window.history.back();
 }
-
 
 
 function initSlider() {
