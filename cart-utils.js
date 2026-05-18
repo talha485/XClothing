@@ -33,11 +33,16 @@ function removeFromCart(productId) {
     updateCartCount();
     renderCartSidebar();
 }
-function changeQty(productId, delta) {
+function changeQty(productId, movement) {
     let cart = getCart();
     let item = cart.find(i => i.id === productId);
     if (!item) return;
-    item.quantity += delta;
+    if (movement === "add") {
+        item.quantity += 1;
+    }
+    if (movement === "reduce") {
+        item.quantity -= 1;
+    }
     if (item.quantity <= 0) {
         cart = cart.filter(i => i.id !== productId);
     }
@@ -127,9 +132,9 @@ function renderCartSidebar() {
                     <span class="xc-new">Rs. ${item.newPrice}</span>
                 </p>
                 <div class="xc-qty-row">
-                    <button onclick="changeQty(${item.id}, -1)"><i class="fa-solid fa-minus"></i></button>
+                    <button onclick="changeQty(${item.id}, 'reduce')"><i class="fa-solid fa-minus"></i></button>
                     <span>${item.quantity}</span>
-                    <button onclick="changeQty(${item.id}, 1)"><i class="fa-solid fa-plus"></i></button>
+                    <button onclick="changeQty(${item.id}, 'add')"><i class="fa-solid fa-plus"></i></button>
                 </div>
             </div>
             <button class="xc-remove-btn" onclick="removeFromCart(${item.id})">

@@ -46,11 +46,11 @@ function renderCartPage() {
             <div class="cart-price-cell">Rs. ${item.newPrice.toLocaleString()}</div>
             <div class="cart-qty-cell">
                 <div class="qty-control">
-                    <button onclick="changeQty(${item.id}, -1); renderCartPage();" title="Decrease">
+                    <button onclick="changeQty(${item.id}, 'reduce'); renderCartPage();" title="Decrease">
                         <i class="fa-solid fa-minus"></i>
                     </button>
                     <span>${item.quantity}</span>
-                    <button onclick="changeQty(${item.id}, 1); renderCartPage();" title="Increase">
+                    <button onclick="changeQty(${item.id}, 'add'); renderCartPage();" title="Increase">
                         <i class="fa-solid fa-plus"></i>
                     </button>
                 </div>
