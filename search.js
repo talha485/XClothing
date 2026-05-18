@@ -1,5 +1,5 @@
 function openSearch() {
-    ensureSearchExists();
+    makeSearchBar();
     document.getElementById("xc-search-overlay").classList.add("open");
     document.getElementById("xc-search-input").focus();
 }
@@ -10,7 +10,7 @@ function closeSearch() {
     document.getElementById("xc-search-results").innerHTML = "";
 }
 
-function ensureSearchExists() {
+function makeSearchBar() {
     if (document.getElementById("xc-search-overlay")) return;
 
     let overlay = document.createElement("div");
