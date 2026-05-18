@@ -1,27 +1,6 @@
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-console.log("Page loaded cart:", cart);
-
-function addToCart(product) {
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    let existingProduct = cart.find(item => item.id === product.id);
-    if (existingProduct) {
-        existingProduct.quantity += 1;
-    } else {
-        let productWithQuantity = {
-            ...product,
-            quantity: 1
-        };
-        cart.push(productWithQuantity);
-    }
-    localStorage.setItem('cart', JSON.stringify(cart));
-    console.log("Updated Cart:", cart);
-    alert(product.name + " added to cart");
-}
-
 function goBack() {
     window.history.back();
 }
-
 
 function initSlider() {
     const slidesWrapper = document.querySelector('.slides');
@@ -98,7 +77,9 @@ function loadHeaderFooter() {
         .then(res => res.text())
         .then(data => {
             document.getElementById("header").innerHTML = data;
+            updateCartCount();
         });
+
 
     fetch("footer.html")
         .then(res => res.text())
