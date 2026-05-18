@@ -2,60 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>X Clothing</title>
+    <title>About Us – X Clothing</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <div id="header"></div>
-<button class="back-btn" onclick="goBack()">
-    <i class="fa-solid fa-arrow-left"></i> Back
-</button>
-
-<div class="about">
 
 
-    <h1>About Us - XClothing</h1>
+<section class="about-hero">
+    <div class="about-hero-content">
+        <p class="about-hero-tag">Our Story</p>
+        <h1>Crafted for the <span>Modern Man</span></h1>
+        <p class="about-hero-sub">Style meets substance — XClothing is where confidence begins.</p>
+    </div>
+</section>
 
-    <h2>Vision</h2>
-    <p>To become a symbol of modern style and confidence.</p>
+<section class="about-section">
+    <div class="about-container">
+        <div class="about-text-block">
+            <span class="about-label">Who We Are</span>
+            <h2>More Than Just Clothing</h2>
+            <p>XClothing is a modern fashion brand dedicated to men's formal and casual wear. Our journey is driven by a simple belief: quality products and consistent customer care create lasting success.</p>
+            <p>We are committed to building strong relationships with our customers by delivering stylish, comfortable, and high-quality clothing. Every product at XClothing is designed to reflect sophistication, modern trends, and attention to detail.</p>
+            <p>Our collections are crafted to meet the needs of today's men — combining elegance with everyday comfort. We continuously strive to improve and bring the best fashion experience to our customers.</p>
+        </div>
+        <div class="about-stats">
+            <div class="stat-card">
+                <i class="fa-solid fa-shirt"></i>
+                <h3>500+</h3>
+                <p>Products</p>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-users"></i>
+                <h3>10k+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-star"></i>
+                <h3>4.9</h3>
+                <p>Avg Rating</p>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Fast</h3>
+                <p>Delivery</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <h2>Mission</h2>
-    <p>To lead men's fashion by offering high-quality clothing, elegant designs, and excellent customer service.</p>
+<section class="vmv-section">
+    <div class="vmv-grid">
+        <div class="vmv-card">
+            <div class="vmv-icon"><i class="fa-solid fa-eye"></i></div>
+            <h3>Vision</h3>
+            <p>To become a symbol of modern style and confidence for men across Pakistan and beyond.</p>
+        </div>
+        <div class="vmv-card vmv-card--center">
+            <div class="vmv-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <h3>Mission</h3>
+            <p style="color: white;">To lead men's fashion by offering high-quality clothing, elegant designs, and excellent customer service.</p>
+        </div>
+        <div class="vmv-card">
+            <div class="vmv-icon"><i class="fa-solid fa-heart"></i></div>
+            <h3>Values</h3>
+            <ul class="vmv-list">
+                <li><i class="fa-solid fa-check"></i> Integrity</li>
+                <li><i class="fa-solid fa-check"></i> Trust</li>
+                <li><i class="fa-solid fa-check"></i> Commitment to Excellence</li>
+                <li><i class="fa-solid fa-check"></i> Teamwork</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-    <h2>Values</h2>
-    <ul>
-        <li>Integrity</li>
-        <li>Trust</li>
-        <li>Commitment to Excellence</li>
-        <li>Teamwork</li>
-    </ul>
+<!-- Promise Section -->
+<section class="about-promise">
+    <div class="promise-content">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h2>Our Promise to You</h2>
+        <p>At XClothing, we value our customers' trust and loyalty. Your confidence inspires us to grow, innovate, and deliver excellence in everything we do.</p>
+        <a href="index.html" class="promise-btn">Shop the Collection</a>
+    </div>
+</section>
 
-    <h2>Who We Are</h2>
-    <p>
-        XClothing is a modern fashion brand dedicated to men’s formal and casual wear.
-        Our journey is driven by a simple belief: quality products and consistent customer care create lasting success.
-    </p>
-
-    <p>
-        We are committed to building strong relationships with our customers by delivering stylish, comfortable,
-        and high-quality clothing. Every product at XClothing is designed to reflect sophistication, modern trends,
-        and attention to detail.
-    </p>
-
-    <p>
-        Our collections are crafted to meet the needs of today’s men — combining elegance with everyday comfort.
-        We continuously strive to improve and bring the best fashion experience to our customers.
-    </p>
-
-    <p>
-        At XClothing, we value our customers’ trust and loyalty. Your confidence inspires us to grow, innovate,
-        and deliver excellence in everything we do.
-    </p>
-
-</div>
 <div id="footer"></div>
+<script src="products.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>
