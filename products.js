@@ -90,3 +90,10 @@ if (seasonSaleContainer) {
 if (newArrivalContainer) {
     newArrivalContainer.innerHTML = newArrivalProducts.map(generateHTML).join('');
 }
+// at the bottom of products.js, replace direct rendering with this:
+if (document.getElementById("season")) {
+    document.getElementById("season").innerHTML = seasonProducts.map(generateHTML).join("");
+}
+if (document.getElementById("new-arrival")) {
+    document.getElementById("new-arrival").innerHTML = newArrivalProducts.map(generateHTML).join("");
+}
