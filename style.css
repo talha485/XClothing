@@ -66,8 +66,8 @@ h1, h2 {
 }
 
 .dropdown-menu a:hover {
-    color: #1F6F5F;
-    background: rgba(255, 255, 255, 0.2);
+    color: #EEEEEE;
+    background: rgba(47,160,132,1);
     transition: 0.3s;
 }
 
@@ -795,7 +795,7 @@ h1, h2 {
 
 .dropdown-menu a {
     display: block;
-    color: #EEEEEE;
+    color: #1F6F5F;
     text-decoration: none;
     padding: 5px;
 }
