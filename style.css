@@ -19,7 +19,6 @@ h1, h2 {
     text-transform: uppercase;
 }
 
-
 .Navbar {
     height: 80px;
     display: flex;
@@ -31,11 +30,14 @@ h1, h2 {
     z-index: 1000;
 }
 
+
 .Navbar img {
     height: 60px;
     margin-left: 30px;
     width: auto;
 }
+
+
 
 .Links {
     display: flex;
@@ -46,11 +48,14 @@ h1, h2 {
 
 }
 
+
+
 .Links a {
     text-decoration: none;
     color: #EEEEEE;
     font-size: 18px;
 }
+
 
 .drop-link {
     text-decoration: none;
@@ -64,6 +69,8 @@ h1, h2 {
     color: #6FCF97;
     cursor: pointer;
 }
+
+
 
 .dropdown-menu a:hover {
     color: #EEEEEE;
@@ -775,9 +782,11 @@ h1, h2 {
     gap: 20px;
 }
 
-.dropdown {
+/*.dropdown {
     position: relative;
 }
+
+ */
 
 .dropdown-menu {
     display: none;
