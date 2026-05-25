@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>X Clothing</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +13,21 @@
 </head>
 <body>
 <div id="header"></div>
-<div class="hero">
-    <div class="slides">
-        <div class="slide">
-            <img src="images/Banner.png" alt="Banner">
-            <h1>New Arrival</h1>
-            <h2>Shop Now</h2>
+<div class="hero w-full h-[600px] overflow-hidden relative cursor-pointer">
+    <div class="slides flex w-full h-full transition-transform duration-500 ease-in-out">
+        <div class="slide w-full h-[600px] shrink-0">
+            <img src="images/Banner.png" alt="Banner" class="absolute top-0 left-0 w-full h-full object-cover">
+            <h1 class="absolute top-[5%] left-1/2 -translate-x-1/2 text-black text-[60px] z-[10] whitespace-nowrap">New Arrival</h1>
+            <h2 class="absolute top-[18%] left-1/2 -translate-x-1/2 text-[#9e0a0a] text-[60px] z-[10] whitespace-nowrap">Shop Now</h2>
         </div>
-        <div class="slide">
-            <img src="images/banner2.png" alt="Banner">
+        <div class="slide w-full h-[600px] shrink-0">
+            <img src="images/banner2.png" alt="Banner" class="w-full h-full object-cover">
         </div>
-        <div class="slide">
-            <img src="images/banner3.png" alt="Banner">
+        <div class="slide w-full h-[600px] shrink-0">
+            <img src="images/banner3.png" alt="Banner" class="w-full h-full object-cover">
         </div>
-        <div class="slide">
-            <img src="images/banner4.png" alt="Banner">
+        <div class="slide w-full h-[600px] shrink-0">
+            <img src="images/banner4.png" alt="Banner" class="w-full h-full object-cover">
         </div>
     </div>
     <button class="prev-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
@@ -35,29 +36,28 @@
 </div>
 <div id="season-section">
     <div class="sale-new">
-        <h1>Season Sale</h1>
+        <h1 class="text-[#1F6F5F] text-[40px] mt-[30px] text-center">Season Sale</h1>
 
     </div>
-    <div id="season" class="container">
-
+    <div id="season" class="container w-full grid grid-cols-4 gap-[20px] justify-items-center items-start px-[40px]">
     </div>
-    <div class="view-more">
+    <div class="view-more text-center my-[20px]">
         <a href="season-sale.html">
-            <button>View More</button>
+            <button class="py-[10px] px-[20px] text-[16px] w-auto inline-block cursor-pointer bg-[#6FCF97] text-[#1F6F5F] border-none rounded-[4px] hover:bg-[#2FA084] hover:text-[#EEEEEE] hover:transform scale-[0.98]">View More</button>
         </a>
     </div>
 </div>
 <div id="new-section">
 
     <div class="sale-new">
-        <h1>New Arrival</h1>
+        <h1 class="text-[#1F6F5F] text-[40px] mt-[30px] text-center">New Arrival</h1>
 
     </div>
-    <div id="new-arrival" class="container">
+    <div id="new-arrival" class="container grid grid-cols-4 gap-[20px] justify-items-center">
     </div>
-    <div class="view-more">
+    <div class="view-more text-center my-[20px]">
         <a href="new-arrival.html">
-            <button>View More</button>
+            <button class="py-[10px] px-[20px] text-[16px] w-auto inline-block cursor-pointer bg-[#6FCF97] text-[#1F6F5F] border-none rounded-[4px] hover:bg-[#2FA084] hover:text-[#EEEEEE] hover:transform scale-[0.98]">View More</button>
         </a>
     </div>
 </div>
