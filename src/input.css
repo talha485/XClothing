@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@layer components {
+    .prev-btn, .next-btn {
+        @apply absolute top-1/2 -translate-y-1/2 h-full w-[5%] bg-transparent text-white border-none p-[15px] cursor-pointer z-[10] text-[20px] flex items-center justify-center;
+    }
+
+    .prev-btn {
+        @apply left-[10px];
+    }
+
+    .next-btn {
+        @apply right-[10px];
+    }
+
+    .prev-btn i, .next-btn i {
+        @apply rounded-full transition-all duration-200 bg-[rgba(0,0,0,0.5)] text-[20px] flex items-center justify-center;
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        min-height: 50px;
+        line-height: 1;
+    }
+
+    .prev-btn:hover i, .next-btn:hover i {
+        @apply bg-[rgba(0,0,0,0.8)] scale-110;
+    }
+}
