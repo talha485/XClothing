@@ -66,16 +66,16 @@ let newArrivalContainer = document.getElementById('new-arrival');
 
 
 let generateHTML = (product) => `
-    <div class="product-card">
+    <div class="group w-full border border-[#EEEEEE] p-[15px] text-center bg-[#EEEEEE] rounded-[8px] transition-all duration-300 ease-in-out hover:-translate-y-[10px] hover:shadow-[0_10px_20px_rgba(0,0,0,0.15)] hover:cursor-pointer hover:border-[#EEEEEE]">
         <a href="product-detail-page.html?id=${product.id}" style="text-decoration: none; color: inherit;">
-            <div class="img-container">
-                <img src="${product.img}" alt="${product.name}">
+            <div class="img-container w-full h-[350px] overflow-hidden mb-[10px] ">
+                <img src="${product.img}" alt="${product.name}" class="block w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105">
             </div>
             <p class="product-name">${product.name}</p>
         </a>
         <p class="price-row">
-            ${product.oldPrice ? `<span class="old-price">Rs. ${product.oldPrice}</span>` : ''}
-            <span class="new-price">Rs. ${product.newPrice}</span>
+            ${product.oldPrice ? `<span class="old-price line-through text-[grey] mr-[10px]">Rs. ${product.oldPrice}</span>` : ''}
+            <span class="new-price text-[red]">Rs. ${product.newPrice}</span>
         </p>
     </div>
 `;

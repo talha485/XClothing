@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>X Clothing</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <head>
@@ -21,13 +22,13 @@
 <div id="header"></div>
 
 <div class="sale-new">
-    <button class="back-btn" onclick="goBack()">
+    <button class="back-btn back-btn bg-[#6FCF97] text-[#1F6F5F] m-[10px] py-[8px] px-[16px] border-none rounded-[4px] cursor-pointer text-[14px] transition-all duration-200 hover:bg-[#2FA084] hover:text-[#EEEEEE] hover:-translate-x-[3px]" onclick="goBack()">
         <i class="fa-solid fa-arrow-left"></i> Back
     </button>
-    <h1>New Arrival</h1>
+    <h1 class="text-[#1F6F5F] text-[40px] mt-[30px] text-center">New Arrival</h1>
 
 </div>
-<div id="new-arrival" class="container"></div>
+<div id="new-arrival" class="products-grid grid grid-cols-4 p-10 gap-[20px]"></div>
 <div id="footer"></div>
 <script src="products.js"></script>
 <script src="search.js"></script>

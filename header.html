@@ -1,41 +1,44 @@
 <header>
-    <div class="Navbar">
-        <div class="Logo">
+    <div class="navbar h-[80px] flex items-center py-[5px] px-[10px] bg-[#1F6F5F] sticky top-0 z-[1000]">
+        <div class="ml-[30px] shrink-0">
             <a href="index.html">
-                <img src="images/logo.png" alt="Logo">
+                <img src="images/logo.png" alt="Logo" class="h-[60px] w-auto">
             </a>
         </div>
-        <div class="Links">
-            <a href="index.html">Home</a>
-            <div class="dropdown">
-                <span class="drop-link">
+        <div class="Links flex items-center justify-center w-full gap-[40px]">
+            <a href="index.html" class="no-underline text-[#EEEEEE] text-[18px] hover:text-[#6FCF97] transition-all duration-500">Home</a>
+            <div class="dropdown relative group">
+                <span class="text-[#EEEEEE] text-[18px] hover:text-[#6FCF97] transition-all duration-500 cursor-pointer">
                     Season Sale <i class="fas fa-angle-down"></i>
                 </span>
-                <div class="dropdown-menu">
-                    <a href="#">Kameez Shalwar</a>
-                    <a href="#">Coats</a>
-                    <a href="#">Jeans</a>
+                <div class="dropdown-menu hidden group-hover:block absolute top-full left-0 bg-[#6FCF97] p-[10px] min-w-[180px] z-50">
+                    <a href="#" class="block text-[#1F6F5F] no-underline p-[5px] hover:text-[#EEEEEE] hover:bg-[rgba(47,160,132,1)] transition-all duration-300">Kameez Shalwar</a>
+                    <a href="#" class="block text-[#1F6F5F] no-underline p-[5px] hover:text-[#EEEEEE] hover:bg-[rgba(47,160,132,1)] transition-all duration-300">Coats</a>
+                    <a href="#" class="block text-[#1F6F5F] no-underline p-[5px] hover:text-[#EEEEEE] hover:bg-[rgba(47,160,132,1)] transition-all duration-300">Jeans</a>
                 </div>
             </div>
-            <div class="dropdown">
-                <span class="drop-link">
+            <div class="dropdown relative group">
+                <span class="text-[#EEEEEE] text-[18px] hover:text-[#6FCF97] transition-all duration-500 cursor-pointer">
                     New Arrival <i class="fas fa-angle-down"></i>
                 </span>
-                <div class="dropdown-menu">
-                    <a href="#">Shirts</a>
-                    <a href="#">Polo Shirts</a>
-                    <a href="#">Trousers</a>
+                <div class="dropdown-menu hidden group-hover:block absolute top-full left-0 bg-[#6FCF97] p-[10px] min-w-[180px] z-50">
+                    <a href="#" class="block text-[#1F6F5F] no-underline p-[5px] hover:text-[#EEEEEE] hover:bg-[rgba(47,160,132,1)] transition-all duration-300">Shirts</a>
+                    <a href="#" class="block text-[#1F6F5F] no-underline p-[5px] hover:text-[#EEEEEE] hover:bg-[rgba(47,160,132,1)] transition-all duration-300">Polo Shirts</a>
+                    <a href="#" class="block text-[#1F6F5F] no-underline p-[5px] hover:text-[#EEEEEE] hover:bg-[rgba(47,160,132,1)] transition-all duration-300">Trousers</a>
                 </div>
             </div>
-            <a href="#">Accessories</a>
+            <a href="#" class="no-underline text-[#EEEEEE] text-[18px] hover:text-[#6FCF97] transition-all duration-500">Accessories</a>
         </div>
-        <div class="nav-right">
-            <div class="search-icon" onclick="openSearch()" title="Search">
+        <div class="nav-right flex items-center shrink-0 mr-[20px]">
+            <div onclick="openSearch()" title="Search" class="cursor-pointer text-[20px] text-[#EEEEEE] p-[8px] rounded-full mr-[8px] flex items-center justify-center transition-all duration-200 hover:bg-[rgba(255,255,255,0.15)] hover:scale-110">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <div class="cart-icon" onclick="openCart()" title="View Cart">
+            <div onclick="openCart()" title="View Cart" class="relative cursor-pointer text-[24px] text-[#EEEEEE] p-[8px] rounded-full flex items-center justify-center transition-all duration-200 hover:bg-[rgba(255,255,255,0.15)] hover:scale-110">
                 <i class="fa-solid fa-bag-shopping"></i>
-                <span id="cart-count" style="display:none;">0</span>
+                <span id="cart-count" style="display:none;"
+                      class="absolute top-[-2px] right-[-4px] bg-[#e44d26] text-white text-[11px] font-bold w-[20px] h-[20px] rounded-full flex items-center justify-center border-2 border-[#1F6F5F]">
+                    0
+                </span>
             </div>
         </div>
     </div>
