@@ -12,90 +12,89 @@
 
 <div id="header"></div>
 
-<!-- Hero -->
-<section class="contact-hero">
+<section class="contact-hero bg-gradient-to-br from-[#1F6F5F] to-[#17574b] py-[100px] px-[40px] text-center text-white">
     <div class="contact-hero-content">
-        <p class="contact-hero-tag">Get In Touch</p>
-        <h1>We'd Love to <span>Hear From You</span></h1>
-        <p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us.</p>
+        <p class="contact-hero-tag text-[13px] uppercase tracking-[3px] text-[#6FCF97] mb-[16px] font-semibold block">Get In Touch</p>
+        <h1 class="font-[Playfair_Display] text-[48px] text-white mb-[16px] leading-[1.2]">We'd Love to <span class="text-[#6FCF97]">Hear From You</span></h1>
+        <p class="text-[16px] text-white/75 max-w-[540px] mx-auto leading-[1.8]">We love to hear from you on our customer service, merchandise, website or any topics you want to share with us.</p>
     </div>
 </section>
 
-<section class="contact-layout">
+<section class="contact-layout flex gap-[50px] max-w-[1150px] mx-auto py-[80px] px-[40px] items-start">
 
-    <div class="contact-info">
-        <h2>Contact Information</h2>
-        <p class="contact-info-sub">Reach out through any of these channels and we'll get back to you as soon as possible.</p>
+    <div class="contact-info w-[340px] shrink-0">
+        <h2 class="text-[26px] text-[#222] font-bold mb-[10px] font-[Poppins] normal-case tracking-normal">Contact Information</h2>
+        <p class="contact-info-sub text-[14px] text-[#888] leading-[1.7] mb-[32px]">Reach out through any of these channels and we'll get back to you as soon as possible.</p>
 
-        <div class="contact-info-card">
-            <div class="contact-info-icon">
+        <div class="contact-info-card flex items-start gap-4 py-[18px]">
+            <div class="contact-info-icon w-[44px] h-[44px] bg-[#f0f9f6] rounded-[10px] flex items-center justify-center text-[18px] text-[#1F6F5F] flex-shrink-0">
                 <i class="fa-solid fa-location-dot"></i>
             </div>
             <div>
-                <h4>Our Location</h4>
-                <p>Lahore, Punjab, Pakistan</p>
+                <h4 class="text-[13px] uppercase tracking-[1px] text-[#999] mb-[4px] font-semibold">Our Location</h4>
+                <p class="text-[15px] text-[#333] font-medium">Lahore, Punjab, Pakistan</p>
             </div>
         </div>
 
-        <div class="contact-info-card">
-            <div class="contact-info-icon">
+        <div class="contact-info-card flex items-start gap-4 py-[18px]">
+            <div class="contact-info-icon w-[44px] h-[44px] bg-[#f0f9f6] rounded-[10px] flex items-center justify-center text-[18px] text-[#1F6F5F] flex-shrink-0">
                 <i class="fa-solid fa-phone"></i>
             </div>
             <div>
-                <h4>Phone Number</h4>
-                <p>+92 320 4339485</p>
+                <h4 class="text-[13px] uppercase tracking-[1px] text-[#999] mb-[4px] font-semibold">Phone Number</h4>
+                <p class="text-[15px] text-[#333] font-medium">+92 321 0004633</p>
             </div>
         </div>
 
-        <div class="contact-info-card">
-            <div class="contact-info-icon">
+        <div class="contact-info-card flex items-start gap-4 py-[18px]">
+            <div class="contact-info-icon w-[44px] h-[44px] bg-[#f0f9f6] rounded-[10px] flex items-center justify-center text-[18px] text-[#1F6F5F] flex-shrink-0">
                 <i class="fa-solid fa-envelope"></i>
             </div>
             <div>
-                <h4>Email Address</h4>
-                <p>XClothing120@gmail.com</p>
+                <h4 class="text-[13px] uppercase tracking-[1px] text-[#999] mb-[4px] font-semibold">Email Address</h4>
+                <p class="text-[15px] text-[#333] font-medium">XClothing120@gmail.com</p>
             </div>
         </div>
 
-        <div class="contact-info-card">
-            <div class="contact-info-icon">
+        <div class="contact-info-card flex items-start gap-4 py-[18px]">
+            <div class="contact-info-icon w-[44px] h-[44px] bg-[#f0f9f6] rounded-[10px] flex items-center justify-center text-[18px] text-[#1F6F5F] flex-shrink-0">
                 <i class="fa-solid fa-clock"></i>
             </div>
             <div>
-                <h4>Working Hours</h4>
-                <p>Mon – Sat: 9am – 9pm</p>
+                <h4 class="text-[13px] uppercase tracking-[1px] text-[#999] mb-[4px] font-semibold">Working Hoursn</h4>
+                <p class="text-[15px] text-[#333] font-medium">Mon-Sat: 9am - 9pm</p>
             </div>
         </div>
 
     </div>
 
-       <div class="contact-form-wrap">
-        <h2>Send Us a Message</h2>
-        <p class="contact-form-sub">Ask us anything! We're here to help.</p>
+    <div class="contact-form-wrap flex-1 bg-white rounded-[16px] p-[40px] shadow-[0_4px_30px_rgba(0,0,0,0.07)] border border-[#eee]">
+        <h2 class="text-[26px] text-[#222] font-[Poppins] font-bold mb-[8px] normal-case tracking-normal">Send Us a Message</h2>
+        <p class="contact-form-sub text-[14px] text-[#888] mb-[32px]">Ask us anything! We're here to help.</p>
 
         <form id="contactForm" class="contact-form">
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Name <span class="star">*</span></label>
-                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+            <div class="form-row grid grid-cols-2 gap-[20px]">
+                <div class="form-group flex flex-col mb-[24px]">
+                    <label class="text-[13px] font-semibold text-[#444] mb-[8px] uppercase tracking-[0.5px]">Name <span class="star">*</span></label>
+                    <input class="w-full px-[16px] py-[13px] border-[1.5px] border-[#e0e0e0] rounded-[8px] text-[14px] font-[Poppins] text-[#333] bg-[#fafafa] outline-none transition-colors duration-200 focus:border-[#1F6F5F] focus:bg-white" type="text" id="name" name="name" placeholder="Your full name" required>
                 </div>
-                <div class="form-group">
-                    <label>Phone Number <span class="star">*</span></label>
-                    <input type="tel" id="phone" name="phone" placeholder="+92 300 0000000" required>
+                <div class="form-group flex flex-col mb-[24px]">
+                    <label class="text-[13px] font-semibold text-[#444] mb-[8px] uppercase tracking-[0.5px]">Phone Number <span class="star">*</span></label>
+                    <input class="w-full px-[16px] py-[13px] border-[1.5px] border-[#e0e0e0] rounded-[8px] text-[14px] font-[Poppins] text-[#333] bg-[#fafafa] outline-none transition-colors duration-200 focus:border-[#1F6F5F] focus:bg-white" type="tel" id="phone" name="phone" placeholder="+92 300 0000000" required>
                 </div>
             </div>
 
-            <div class="form-group">
-                <label>Email Address <span class="star">*</span></label>
-                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <div class="form-group flex flex-col mb-[24px]">
+                <label class="text-[13px] font-semibold text-[#444] mb-[8px] uppercase tracking-[0.5px]">Email Address <span class="star">*</span></label>
+                <input class="w-full px-[16px] py-[13px] border-[1.5px] border-[#e0e0e0] rounded-[8px] text-[14px] font-[Poppins] text-[#333] bg-[#fafafa] outline-none transition-colors duration-200 focus:border-[#1F6F5F] focus:bg-white" type="email" id="email" name="email" placeholder="you@example.com" required>
             </div>
 
-            <div class="form-group">
-                <label>Message <span class="star">*</span></label>
-                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            <div class="form-group flex flex-col mb-[24px]">
+                <label class="text-[13px] font-semibold text-[#444] mb-[8px] uppercase tracking-[0.5px]">Message <span class="star">*</span></label>
+                <textarea class="w-full h-[140px] resize-y px-[16px] py-[13px] border-[1.5px] border-[#e0e0e0] rounded-[8px] text-[14px] font-[Poppins] text-[#333] bg-[#fafafa] outline-none transition-colors duration-200 focus:border-[#1F6F5F] focus:bg-white" id="message" name="message" placeholder="Write your message here..." required></textarea>
             </div>
 
-            <button type="submit" class="contact-submit-btn">
+            <button type="submit" class="contact-submit-btn py-[10px] px-[20px] text-[16px] w-auto inline-block cursor-pointer bg-[#6FCF97] text-[#1F6F5F] border-none no-underline rounded-[4px] hover:bg-[#2FA084] hover:text-[#EEEEEE] hover:transform scale-[0.98]">
                 <i class="fa-solid fa-paper-plane"></i> Send Message
             </button>
         </form>

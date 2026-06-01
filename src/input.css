@@ -2,25 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+@layer base {
+    * {
+        @apply m-0 p-0 box-border;
+    }
+
+    body {
+        @apply leading-[1.6] bg-[#EEEEEE] font-['Poppins',sans-serif] font-normal;
+    }
+
+    h1, h2 {
+        @apply font-['Playfair_Display',serif] font-bold tracking-[1px] uppercase;
+    }
+
+    ul {
+        @apply list-none p-0 m-0;
+    }
 }
 
 @layer components {
     .prev-btn, .next-btn {
         @apply absolute top-1/2 -translate-y-1/2 h-full w-[5%] bg-transparent text-white border-none p-[15px] cursor-pointer z-[10] text-[20px] flex items-center justify-center;
     }
-
-    .prev-btn {
-        @apply left-[10px];
-    }
-
-    .next-btn {
-        @apply right-[10px];
-    }
-
+    .prev-btn { @apply left-[10px]; }
+    .next-btn { @apply right-[10px]; }
     .prev-btn i, .next-btn i {
         @apply rounded-full transition-all duration-200 bg-[rgba(0,0,0,0.5)] text-[20px] flex items-center justify-center;
         width: 50px;
@@ -29,8 +34,31 @@ ul {
         min-height: 50px;
         line-height: 1;
     }
-
     .prev-btn:hover i, .next-btn:hover i {
         @apply bg-[rgba(0,0,0,0.8)] scale-110;
+    }
+    .cart-table-row:last-child {
+        @apply border-b-0 rounded-b-[8px];
+    }
+    .cart-product-cell img {
+        @apply w-[72px] h-[85px] object-cover rounded-[6px] bg-[#f5f5f5] shrink-0;
+    }
+    #xc-search-overlay.open {
+        @apply opacity-100 pointer-events-auto;
+    }
+    .xc-result-item:hover .fa-arrow-right {
+        @apply text-[#1F6F5F];
+    }
+    #xc-sidebar-overlay {
+        @apply fixed inset-0 bg-[rgba(0,0,0,0.45)] z-[1100] opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out;
+    }
+    #xc-sidebar-overlay.open {
+        @apply opacity-100 pointer-events-auto;
+    }
+    #xc-cart-sidebar {
+        @apply fixed top-0 right-[-420px] w-[400px] max-w-[95vw] h-screen bg-white z-[1200] flex flex-col transition-all duration-[350ms] shadow-[-4px_0_30px_rgba(0,0,0,0.15)];
+    }
+    #xc-cart-sidebar.open {
+        @apply right-0;
     }
 }

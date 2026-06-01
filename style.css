@@ -1,3 +1,4 @@
+/*
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +20,6 @@ h1, h2 {
     text-transform: uppercase;
 }
 
-/*
 .Navbar {
     height: 80px;
     display: flex;
@@ -645,7 +645,7 @@ h1, h2 {
     box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
 
- */
+
 
 
 .contact-hero {
@@ -654,6 +654,8 @@ h1, h2 {
     text-align: center;
     color: #fff;
 }
+
+
 
 .contact-hero-tag {
     font-size: 13px;
@@ -664,6 +666,8 @@ h1, h2 {
     font-weight: 600;
     display: block;
 }
+
+
 
 .contact-hero h1 {
     font-family: 'Playfair Display', serif;
@@ -682,6 +686,7 @@ h1, h2 {
     margin: 0 auto;
     line-height: 1.8;
 }
+
 
 .contact-layout {
     display: flex;
@@ -752,6 +757,8 @@ h1, h2 {
     font-weight: 500;
 }
 
+
+
 .contact-form-wrap {
     flex: 1;
     background: #fff;
@@ -777,17 +784,23 @@ h1, h2 {
     margin-bottom: 32px;
 }
 
+
+
 .contact-form .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
+
+
 .contact-form .form-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
 }
+
+
 
 .contact-form label {
     font-size: 13px;
@@ -813,16 +826,20 @@ h1, h2 {
     box-sizing: border-box;
 }
 
+
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #1F6F5F;
     background: #fff;
 }
 
+
+
 .contact-form textarea {
     height: 140px;
     resize: vertical;
 }
+
 
 .contact-submit-btn {
     width: 100%;
@@ -848,7 +865,6 @@ h1, h2 {
     transform: translateY(-1px);
 }
 
-/*
 .sale-new h1 {
     color: #1F6F5F;
     font-size: 40px;
@@ -927,7 +943,7 @@ h1, h2 {
 
 }
 
- */
+
 
 .drop-link i {
     font-size: 15px;
@@ -942,29 +958,37 @@ h1, h2 {
     margin: auto;
 }
 
+
+
 .image-box {
     flex: 1;
 }
+
+
 
 .image-box img {
     width: auto;
     border-radius: 10px;
 }
 
+
+
 .info-box {
     flex: 1;
 }
+
+
 
 .info-box p.category {
     color: #888;
 }
 
 
+
 .price {
     font-size: 24px;
     margin: 20px 0;
 }
-/*
 .old-price {
     text-decoration: line-through;
     color: gray;
@@ -976,7 +1000,6 @@ h1, h2 {
     font-weight: bold;
 }
 
- */
 
 .btn-add-cart {
     margin-top: 30px;
@@ -994,6 +1017,8 @@ h1, h2 {
     transform: scale(0.98);
     cursor: pointer;
 }
+
+
 
 .back-container {
     padding: 10px 20px;
@@ -1020,7 +1045,7 @@ h1, h2 {
     transform: translateX(-3px);
     cursor: pointer;
 }
-/*
+
 .nav-right {
     display: flex;
     align-items: center;
@@ -1064,11 +1089,6 @@ h1, h2 {
     font-family: 'Poppins', sans-serif;
 }
 
- */
-
-/* ============================================================
-   TOAST NOTIFICATION
-   ============================================================ */
 
 #xc-toast {
     position: fixed;
@@ -1101,10 +1121,12 @@ h1, h2 {
     font-size: 18px;
 }
 
+
 /* ============================================================
    CART SIDEBAR
    ============================================================ */
 
+/*
 #xc-sidebar-overlay {
     position: fixed;
     inset: 0;
@@ -1356,11 +1378,12 @@ h1, h2 {
 .xc-checkout-btn:hover {
     background: #17574b;
 }
+*/
 
 /* ============================================================
    CART PAGE (cart.html)
    ============================================================ */
-
+/*
 .cart-breadcrumb {
     padding: 14px 40px;
     font-size: 13px;
@@ -1370,11 +1393,14 @@ h1, h2 {
     gap: 8px;
 }
 
+
+
 .cart-breadcrumb a {
     color: #1F6F5F;
     text-decoration: none;
     font-weight: 500;
 }
+
 
 .cart-breadcrumb a:hover { text-decoration: underline; }
 
@@ -1396,6 +1422,8 @@ h1, h2 {
     color: #999;
 }
 
+
+
 .cart-layout {
     display: flex;
     gap: 30px;
@@ -1407,11 +1435,15 @@ h1, h2 {
     align-items: flex-start;
 }
 
-/* Items panel */
+
 .cart-items-panel {
     flex: 1;
     min-width: 0;
 }
+
+
+
+
 
 .cart-table-header {
     display: grid;
@@ -1426,6 +1458,7 @@ h1, h2 {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
 
 .cart-table-row {
     display: grid;
@@ -1446,6 +1479,8 @@ h1, h2 {
     border-bottom: none;
     border-radius: 0 0 8px 8px;
 }
+
+
 
 .cart-product-cell {
     display: flex;
@@ -1481,6 +1516,7 @@ h1, h2 {
     font-size: 14px;
 }
 
+
 .qty-control {
     display: flex;
     align-items: center;
@@ -1514,6 +1550,7 @@ h1, h2 {
     text-align: center;
 }
 
+
 .remove-btn {
     background: none;
     border: none;
@@ -1543,6 +1580,7 @@ h1, h2 {
     gap: 12px;
 }
 
+
 .btn-clear-cart {
     background: none;
     border: 1px solid #ddd;
@@ -1563,6 +1601,8 @@ h1, h2 {
     color: #e44d26;
 }
 
+
+
 .btn-continue-shopping {
     color: #1F6F5F;
     text-decoration: none;
@@ -1576,7 +1616,7 @@ h1, h2 {
 
 .btn-continue-shopping:hover { gap: 12px; }
 
-/* Summary panel */
+
 .cart-summary-panel {
     width: 320px;
     flex-shrink: 0;
@@ -1600,6 +1640,9 @@ h1, h2 {
     border-bottom: 2px solid #eee;
 }
 
+
+
+
 .summary-line {
     display: flex;
     justify-content: space-between;
@@ -1609,6 +1652,7 @@ h1, h2 {
     border-bottom: 1px solid #f5f5f5;
 }
 
+
 .summary-total {
     font-size: 18px;
     font-weight: 700;
@@ -1617,6 +1661,9 @@ h1, h2 {
     margin-top: 8px;
     padding-top: 16px;
 }
+
+
+
 
 .free-shipping {
     color: #1F6F5F;
@@ -1633,6 +1680,8 @@ h1, h2 {
     padding: 8px;
     border-radius: 6px;
 }
+
+
 
 .btn-checkout {
     width: 100%;
@@ -1658,6 +1707,7 @@ h1, h2 {
     transform: translateY(-1px);
 }
 
+
 .payment-icons {
     display: flex;
     justify-content: center;
@@ -1678,7 +1728,10 @@ h1, h2 {
     gap: 6px;
 }
 
+ */
+
 /* Empty cart full page */
+/*
 .cart-empty-state {
     text-align: center;
     padding: 80px 20px;
@@ -1686,12 +1739,15 @@ h1, h2 {
     border-radius: 10px;
 }
 
+
+
 .cart-empty-state i {
     font-size: 72px;
     color: #e0e0e0;
     display: block;
     margin-bottom: 20px;
 }
+
 
 .cart-empty-state h2 {
     font-size: 24px;
@@ -1708,6 +1764,7 @@ h1, h2 {
     margin-bottom: 28px;
 }
 
+
 .btn-shop-now {
     display: inline-block;
     padding: 14px 32px;
@@ -1722,7 +1779,10 @@ h1, h2 {
 
 .btn-shop-now:hover { background: #17574b; }
 
+ */
+
 /* Add to cart button for product cards on index page */
+/*
 .card-add-btn {
     display: block;
     width: 100%;
@@ -1766,9 +1826,7 @@ h1, h2 {
     transform: scale(1.1);
 }
 
- */
 
-/* Full screen overlay */
 #xc-search-overlay {
     position: fixed;
     inset: 0;
@@ -1783,12 +1841,13 @@ h1, h2 {
     transition: opacity 0.3s ease;
 }
 
+
+
 #xc-search-overlay.open {
     opacity: 1;
     pointer-events: all;
 }
 
-/* Search box inside overlay */
 .xc-search-box {
     background: #fff;
     width: 600px;
@@ -1839,7 +1898,6 @@ h1, h2 {
     color: #fff;
 }
 
-/* Search results */
 #xc-search-results {
     max-height: 400px;
     overflow-y: auto;

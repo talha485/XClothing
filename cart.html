@@ -14,34 +14,34 @@
 
 <div id="header"></div>
 
-<div class="cart-breadcrumb">
-  <button class="back-btn" onclick="goBack()">
+<div class="cart-breadcrumb py-[14px] px-[40px] text-[13px] text-[#888] flex items-center gap-[8px]">
+  <button class="back-btn back-btn bg-[#6FCF97] text-[#1F6F5F] m-[10px] py-[8px] px-[16px] border-none rounded-[4px] cursor-pointer text-[14px] transition-all duration-200 hover:bg-[#2FA084] hover:text-[#EEEEEE] hover:-translate-x-[3px]" onclick="goBack()">
     <i class="fa-solid fa-arrow-left"></i> Back
   </button>
 </div>
 
-<div class="cart-page-title">
-  <h1>Shopping Cart</h1>
-  <p id="cart-item-count"></p>
+<div class="cart-page-title pt-[10px] px-[40px] flex items-baseline gap-[16px]">
+  <h1 class="text-[32px] text-[#1F6F5F] font-[Playfair_Display]">Shopping Cart</h1>
+  <p class="text-[14px] text-[#999]" id="cart-item-count"></p>
 </div>
 
-<div class="cart-layout">
+<div class="cart-layout flex gap-[30px] pt-[24px] px-[40px] pb-[60px] max-w-[1300px] mx-auto w-full items-start">
 
-  <div class="cart-items-panel">
+  <div class="cart-items-panel flex-1 min-w-0">
     <div id="cart-page-body"></div>
 
-    <div class="cart-actions">
-      <button class="btn-clear-cart" onclick="clearCart(); renderCartPage();">
+    <div class="cart-actions flex justify-between items-center mt-[20px] flex-wrap gap-[12px]">
+      <button class="btn-clear-cart bg-transparent border border-[#ddd] text-[#888] py-[10px] px-[18px] rounded-[6px] cursor-pointer text-[13px] font-[Poppins] flex items-center gap-[8px] transition-all duration-200 hover:border-[#e44d26] hover:text-[#e44d26]" onclick="clearCart(); renderCartPage();">
         <i class="fa-solid fa-trash"></i> Clear Cart
       </button>
-      <a href="index.html" class="btn-continue-shopping">
+      <a href="index.html" class="btn-continue-shopping text-[#1F6F5F] no-underline font-semibold text-[14px] flex items-center gap-[8px] transition-all duration-200 hover:gap-[12px]">
         <i class="fa-solid fa-arrow-left"></i> Continue Shopping
       </a>
     </div>
   </div>
 
-  <div class="cart-summary-panel" id="cart-summary-panel">
-    <h2>Order Summary</h2>
+  <div class="cart-summary-panel w-[320px] flex-shrink-0 bg-white rounded-[10px] p-[24px] shadow-[0_2px_16px_rgba(0,0,0,0.07)] sticky top-[100px] " id="cart-summary-panel">
+    <h2 class="text-[18px] text-[#222] mb-[20px] font-[Poppins] normal-case tracking-normal font-bold pb-[16px] border-b-2 border-[#eee]">Order Summary</h2>
     <div id="cart-summary-body"></div>
   </div>
 
